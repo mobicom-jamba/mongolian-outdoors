@@ -29,71 +29,62 @@ const TourDetails = () => {
                 <div className="details-content">
                   <span className="location-icon">
                     <i className="far fa-map-marker-alt"></i>
-                    Hilling City, New York 12401
+                    Хөвсгөл аймаг, Монгол
                   </span>
                   <h2>
-                    Marvel at Majestic Mountains and Lakes in Banff, Canada
+                    Хөвсгөл нуурын бүс нутагт адал явдал хийх, байгалийн үзэсгэлэнгээр хөөрөх
                   </h2>
                   <p className="mb-3">
-                    We offer carefully curated destinations and tours that
-                    capture the true essence of location, ensuring you
-                    experience. There are many variations of passages of Lorem
-                    Ipsum available, but the majority have suffered alteradution
-                    in some form by injected humour, or randomised words which
-                    don&apos;t look even slightly believable. If you are going
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteradution in
-                    some form by injected humour, or randomised words which
-                    don&apos;t look even slightly believable. If you are going
+                    Бид Монголын байгалийн үзэсгэлэнт газруудаар сонирхолтой
+                    аяллуудыг анхан шатнаас нь мэргэжлийн түвшинд хүртэл
+                    зохиож байна. Хөвсгөл нуур нь Монголын хамгийн гүн цэнхэр
+                    нуур бөгөөд хүрээлэн буй уулс, ой мод, цэвэр агаараараа
+                    жуулчдийн хүсэл зоригийг татдаг. Энд та морь унаж, загас
+                    барьж, ойн дунд алхаж байгальтайгаа нэгдэх боломжтой.
                   </p>
                   <p className="mb-3">
-                    If you are going There are many variations of passages of
-                    Lorem Ipsum available, but the majority have suffered
-                    alteradution in some form by injected humour, or randomised
-                    words which don&apos;t look even slightly believable. If you
-                    are going
+                    Аяллын турш орон нутгийн малчин айлд зочилж, уламжлалт
+                    монгол хоол амтлах, гэр байрлах туршлагыг мэдрэнэ.
+                    Хөвсгөлийн тайгын ойн амьтан ургамлын аймаг маш баялаг
+                    бөгөөд бүргэд, илбэх, зээрд зэрэг амьтдыг ажиглах
+                    боломжтой.
                   </p>
                   <p>
-                    We offer carefully curated destinations and tours that
-                    capture the true essence of location, ensuring you
-                    experience. There are many variations of passages of Lorem
-                    Ipsum available, but the majority have suffered alteradution
-                    in some form by injected humour, or randomised words which
-                    don&apos;t look even slightly believable. If you are going
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteradution in
-                    some form by injected humour, or randomised words which
-                    don&apos;t look even slightly believable. If you are going
+                    Манай баг Монголын хойд бүсийн газарзүй, цаг уурын
+                    онцлогийг сайн мэддэг бөгөөд жуулчдад аюулгүй, таатай
+                    аяллын нөхцөлийг бүрдүүлдэг. Бүх аялалд туршлагатай
+                    удирдагч хөтөлнө. Морь унах, гэр байрлах, уламжлалт
+                    ёс заншлын талаар дэлгэрэнгүй зааварчилгаа өгнө.
                   </p>
                   <div className="destination-list-item">
-                    <h4>Experience the Difference</h4>
+                    <h4>Манай онцлогууд</h4>
                     <div className="destination-list">
                       <ul className="list">
                         <li>
                           <i className="flaticon-check"></i>
-                          Trusted, Local Travel Experts
+                          Орон нутгийн туршлагатай мэргэжилтнүүд
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Flexible, Hassle-Free Bookings
+                          Уян хатан, хялбар захиалга
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Real-Time Itinerary Updates
+                          Шууд хөтөлбөрийн шинэчлэлт
                         </li>
                       </ul>
                       <ul className="list">
                         <li>
                           <i className="flaticon-check"></i>
-                          Flexible Cancellation Policies
+                          Уян хатан цуцлах нөхцөл
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Customized Travel Experiences
+                          Тусгайлан зохиосон аяллын туршлага
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Exclusive Travel Deals
+                          Онцгой хөнгөлөлттэй аялал
                         </li>
                       </ul>
                     </div>
@@ -103,55 +94,55 @@ const TourDetails = () => {
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-connection"></i>
-                          <h5>Use Free Wi-Fi</h5>
+                          <h5>Үнэгүй Wi-Fi</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-cyber-security"></i>
-                          <h5>Special Security</h5>
+                          <h5>Аюулгүй байдлын баталгаа</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-guide"></i>
-                          <h5>Special Guiding</h5>
+                          <h5>Мэргэжлийн хөтөч</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-gym"></i>
-                          <h5>Gym Center</h5>
+                          <h5>Биеийн тамирын заал</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-cycling"></i>
-                          <h5>Special Security</h5>
+                          <h5>Унадаг дугуй</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-hiking"></i>
-                          <h5>Special Security</h5>
+                          <h5>Явган аялал</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-googles"></i>
-                          <h5>Swimming & Fishing</h5>
+                          <h5>Усанд сэлэх & загасчлах</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-solar-system"></i>
-                          <h5>Solar Energy Syster</h5>
+                          <h5>Нарны эрчим хүч</h5>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="faq-items">
-                    <h4>Tour Plan</h4>
+                    <h4>Аяллын хөтөлбөр</h4>
                     <div className="faq-accordion">
                       <div className="accordion" id="accordion2">
                         {FaqTwoData.slice(0, 4).map((item, index) => {
@@ -185,7 +176,7 @@ const TourDetails = () => {
                     </div>
                   </div>
                   <div className="map-area">
-                    <h3>View in Map</h3>
+                    <h3>Газрын зураг дээр харах</h3>
                     <GoogleMap />
                   </div>
                   <ClientReview />
@@ -195,10 +186,10 @@ const TourDetails = () => {
             <div className="col-xl-4 col-lg-5">
               <div className="tour-details-sidebar sticky-style">
                 <div className="tour-sidebar-items">
-                  <h3>Tour Booking</h3>
+                  <h3>Аялал захиалах</h3>
                   <ul className="form-list">
                     <li>
-                      From Date:
+                      Эхлэх огноо:
                       <div className="form-clt">
                         <div id="datepicker" className="input-group date">
                           <DatePick />
@@ -209,7 +200,7 @@ const TourDetails = () => {
                       </div>
                     </li>
                     <li>
-                      Time:
+                      Цаг:
                       <div className="form-clt d-flex gap-3">
                         <label className="checkbox-single">
                           <span className="d-flex gap-xl-3 gap-2 align-items-center">
@@ -233,10 +224,10 @@ const TourDetails = () => {
                     </li>
                   </ul>
                   <div className="tickets-list">
-                    <p>Tickets</p>
+                    <p>Тасалбар</p>
                     <ul>
                       <li>
-                        18+ Years: <b>$168</b>
+                        18+ нас: <b>168₮</b>
                         <div className="form-clt">
                           <div className="form">
                             <select className="single-select w-100">
@@ -249,7 +240,7 @@ const TourDetails = () => {
                         </div>
                       </li>
                       <li>
-                        18- Years: <b>$100</b>
+                        18- нас: <b>100₮</b>
                         <div className="form-clt">
                           <div className="form">
                             <select className="single-select w-100">
@@ -264,7 +255,7 @@ const TourDetails = () => {
                     </ul>
                   </div>
                   <div className="extra-items">
-                    <p>Add Extra:</p>
+                    <p>Нэмэлт үйлчилгээ:</p>
                     <label className="checkbox-single d-flex justify-content-between align-items-center">
                       <span className="d-flex gap-xl-3 gap-2 align-items-center">
                         <span className="checkbox-area d-center">
@@ -272,10 +263,10 @@ const TourDetails = () => {
                           <span className="checkmark d-center"></span>
                         </span>
                         <span className="text-color">
-                          Add service per booking
+                          Захиалга бүрт нэмэлт үйлчилгээ
                         </span>
                       </span>
-                      <span className="text-color">$45</span>
+                      <span className="text-color">45₮</span>
                     </label>
                     <label className="checkbox-single d-flex justify-content-between align-items-center">
                       <span className="d-flex gap-xl-3 gap-2 align-items-center">
@@ -284,21 +275,21 @@ const TourDetails = () => {
                           <span className="checkmark d-center"></span>
                         </span>
                         <span className="text-color">
-                          Add service per personal
+                          Хүн бүрт нэмэлт үйлчилгээ
                         </span>
                       </span>
-                      <span className="text-color">$35</span>
+                      <span className="text-color">35₮</span>
                     </label>
                   </div>
                   <ul className="total-list">
-                    <li>Total:</li>
-                    <li>$80</li>
+                    <li>Нийт:</li>
+                    <li>80₮</li>
                   </ul>
                   <Link href="/tour-details" className="theme-btn">
-                    <span>Book Now</span>{" "}
+                    <span>Захиалах</span>{" "}
                     <i className="far fa-long-arrow-right"></i>
                   </Link>
-                  <p className="text">Need any help?</p>
+                  <p className="text">Тусламж хэрэгтэй юу?</p>
                 </div>
                 <div
                   className="offer-card bg-cover"
@@ -307,7 +298,7 @@ const TourDetails = () => {
                       "url(/images/destinations/offter-card.jpg)",
                   }}
                 >
-                  <h3>Book Now and Enjoy Amazing Savings!</h3>
+                  <h3>Одоо захиалж, онцгой хөнгөлөлт эдлээрэй!</h3>
                   <Image src={discount} alt="img" />
                 </div>
               </div>

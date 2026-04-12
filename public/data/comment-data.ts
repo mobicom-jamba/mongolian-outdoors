@@ -6,26 +6,26 @@ const CommentData = [
   {
     id: 0,
     authorImage: one,
-    authorName: "Rohan De Spond",
-    date: "25th january 2021",
+    authorName: "Ганболд Батхүү",
+    date: "2025 оны 1-р сарын 25",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nisi ut aliquip ex ea commodo consequat.",
+      "Монголын тал нутагт морь унаж аялсан туршлага минь үнэхээр гайхалтай байлаа. Уулс хүрээлэн буй ногоон хөндийгөөр давхиж, уламжлалт гэрт байрласан нь мартагдашгүй дурсгал боллоо.",
   },
   {
     id: 1,
     authorImage: two,
-    authorName: "Arista Williamson",
-    date: "21th Feb 2025",
+    authorName: "Сарангэрэл Дулам",
+    date: "2025 оны 2-р сарын 21",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nisi ut aliquip ex ea commodo consequat.",
+      "Хөвсгөл нуурын аялал нь байгалийн үзэсгэлэнгээр хангамжтай байлаа. Цэнхэр мандалд завьдаж, тайгын ойд алхаж, оройд нь одод тэнгэртэй унтах нь онцгой туршлага байсан.",
   },
   {
     id: 2,
     authorImage: three,
-    authorName: "Salman Ahmed",
-    date: "29th Jan 2021",
+    authorName: "Мөнхбаатар Амар",
+    date: "2021 оны 1-р сарын 29",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nisi ut aliquip ex ea commodo consequat.",
+      "Говийн бүс нутагт аялж байхдаа элсэн мандалд явган аялал хийж, хадан уулсанд авирсан нь маш сонирхолтой байлаа. Бүргэд барих ёслолд оролцсон нь хамгийн сэтгэл хөдөлгөм мөч байсан.",
   },
 ];
 

@@ -1,31 +1,31 @@
 const FaqTwoData = [
   {
     id: 0,
-    day: "Day 1 ",
-    question: "\u00A0Arrive South Africa Forest",
+    day: "Өдөр 1 ",
+    question: "\u00A0Улаанбаатар хотод ирэх",
     answer:
-      "If you are going There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteradution in some form by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going",
+      "Улаанбаатар хотод ирж, зочид буудалд байрлана. Орон нутгийн соёл, түүхийг танилцах Улаанбаатарын гудамжинд алхаж, Гандан хийдэд зочлоно. Оройн зоог барьж, маргаашын аялалд бэлтгэнэ.",
   },
   {
     id: 1,
-    day: "Day 2 ",
-    question: "\u00A0Lunch Inside of Forest & Adventure",
+    day: "Өдөр 2 ",
+    question: "\u00A0Тэрэлжийн байгалийн цогцолбор & адал явдал",
     answer:
-      "If you are going There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteradution in some form by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going",
+      "Тэрэлжийн байгалийн цогцолборт зорино. Гранит хадны үзэсгэлэнт тогтоц, ногоон хөндийгээр морь унаж, уламжлалт гэрт өдрийн хоол барина. Байгальд зурагдах боломжтой.",
   },
   {
     id: 2,
-    day: "Day 3 ",
-    question: "\u00A0Lunch Inside of Forest & Adventure",
+    day: "Өдөр 3 ",
+    question: "\u00A0Хүнтэй нуурын бүс & адал явдал",
     answer:
-      "If you are going There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteradution in some form by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going",
+      "Хүнтэй нуур руу жолоодож, цэнхэр мандалд дохион хөвөнө. Загасчлах, гахайн мах шарах зэрэг уламжлалт монгол зоогийг амтална. Оройд одод тэнгэртэй гэрт унтана.",
   },
   {
     id: 3,
-    day: "Day 4 ",
-    question: "\u00A0We Will Go Back to Canda",
+    day: "Өдөр 4 ",
+    question: "\u00A0Улаанбаатар руу буцаж ирэх",
     answer:
-      "If you are going There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteradution in some form by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going",
+      "Өглөөний цай ууж, байгалийн үзэсгэлэнт дүр төрхийг сүүлчийн удаа харж Улаанбаатар руу буцна. Суварга тахилгын газар болон Занабазарын урлагийн музейн үзмэрүүдээс хангана.",
   },
 ];
 

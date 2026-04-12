@@ -6,7 +6,7 @@ import NavbarData from "@/public/data/navbar-data";
 import Topbar from "./Topbar";
 import SearchBar from "./SearchBar";
 import OffCanvasMenu from "./OffCanvasMenu";
-import logo from "@/public/images/logo/logo1.png";
+import logo from "@/public/images/logo/black-logo.svg";
 import call from "@/public/images/call.png";
 
 const Header = () => {
@@ -54,16 +54,8 @@ const Header = () => {
               <div className="header-main">
                 <div className="header-left">
                   <div className="logo">
-                    <Link
-                      href="/"
-                      className="text-uppercase header-logo"
-                      style={{
-                        fontSize: "18px",
-                        fontWeight: "bold",
-                        color: "#000",
-                      }}
-                    >
-                      Mongolian Outdoors
+                    <Link href="/">
+                      <Image src={logo} alt="Mongolian Outdoors" height={40} width={160} style={{ height: 'auto', width: 'auto', maxHeight: 40 }} />
                     </Link>
                   </div>
                 </div>

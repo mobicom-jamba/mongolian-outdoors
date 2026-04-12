@@ -3,7 +3,6 @@ import Hero from "@/components/layout/banner/Hero";
 import TravelLocations from "@/components/containers/TravelLocations";
 import TourSection from "@/components/containers/TourSection";
 import TourDiscover from "@/components/containers/TourDiscover";
-import MarqueeSection from "@/components/containers/MarqueeSection";
 import TeamSection from "@/components/containers/TeamSection";
 import TopDestination from "@/components/containers/TopDestination";
 import TestimonialSection from "@/components/containers/TestimonialSection";
@@ -24,7 +23,6 @@ const page = () => {
       {/* <Brand /> */}
       <TourSection />
       <TourDiscover />
-      <MarqueeSection />
       {/* <TeamSection /> */}
       {/* <TopDestination /> */}
       <TestimonialSection />

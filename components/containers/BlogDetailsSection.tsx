@@ -19,32 +19,30 @@ const BlogDetailsSection = () => {
               <div className="blog-post-details border-wrap mt-0">
                 <div className="single-blog-post post-details mt-0">
                   <div className="post-content pt-0">
-                    <h2>The whimsically named Egg Canvas brainchild</h2>
+                    <h2>Монголын тал нутагт адал явдал хийх нь</h2>
                     <div className="post-meta mt-3">
                       <span>
-                        <i className="fal fa-user"></i>Shikhon .Ha
+                        <i className="fal fa-user"></i>Бат-Эрдэнэ
                       </span>
                       <span>
-                        <i className="fal fa-comments"></i>15 Comments
+                        <i className="fal fa-comments"></i>15 Сэтгэгдэл
                       </span>
                       <span>
-                        <i className="fal fa-calendar-alt"></i>4th February 2025
+                        <i className="fal fa-calendar-alt"></i>2025 оны 2-р сарын 4
                       </span>
                     </div>
                     <p>
-                      he whimsically named Egg Canvas is the brainchild of Erica
-                      Choi, a design director and photo Sit amet consect velit
-                      integer tincidunt scelerisque volutpat neque fermeny massa
-                      lacus. grapher based in York. Why the name “Egg Canvas
-                      Erica was inspired by her Korean childhood nickname, which
-                      means egg while “canvas” medium with wh art is created.
-                      “Egg Canvas therefore, is her life—creating beautiful
-                      things each day a blank canvas.
+                      Монголын тал нутаг нь дэлхийн хамгийн өргөн уудам
+                      бэлчээрт хамрагддаг бөгөөд эндхийн байгаль, соёл, уламжлал
+                      нь жуулчдад онцгой туршлагаар хангадаг. Морь унаж тал нутгаар
+                      давхих, гэрт байрлаж одод тэнгэртэй унтах, уламжлалт монгол
+                      хоол амтлах зэрэг нь мартагдашгүй дурсгал бүтээдэг.
                     </p>
                     <p>
-                      We have covered many special events such as fireworks,
-                      fairs, parades, races, walks, awards ceremonies, fashion
-                      shows, sporting events, and even a memorial service.
+                      Бид олон төрлийн онцгой арга хэмжээг зохион байгуулж
+                      байна. Наадам хурд, бүргэд барих ёслол, морин аялал, говийн
+                      экспедиц, загасчлалын тэмцээн зэрэг адал явдалт үйл
+                      ажиллагаанууд багтана.
                     </p>
                     <Image
                       src={one}
@@ -52,82 +50,73 @@ const BlogDetailsSection = () => {
                       className="single-post-image"
                     />
                     <h2 className="title-anim">
-                      You Should Experience Agency At Least Once In Your
-                      Lifetime And Here&apos;s Why.
+                      Монголд аялж байх хамгийн шалтгаан: Байгаль, соёл, адал явдал
                     </h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Curabitur vulputate vestibulum rhon cus, dolor eget
-                      viverra pretium, dolor tellus aliquet nunc, vitae
-                      ultricies erat elit eu lacus. Vestibulum non justo fun
-                      consectetur, cursus ante, tincidunt sapien. Nulla quis
-                      diam sit amet turpis interd enim. Vivamus fauc ex sed nibh
-                      egestas elementum. Mauris et bibendum
+                      Монгол орон нь Азийн зүрхэнд орших бөгөөд говь, хээр,
+                      ой хөндий, уулс гэсэн дөрвөн байгалийн бүстэй. Энэхүү
+                      газарзүйн олон хувилбар нь жуулчдад янз бүрийн адал
+                      явдал хийх боломжийг олгодог. Говийн элсэн мандалд явган
+                      аялал хийхээс эхлээд Хөвсгөл нуурын цэнхэр мандалд
+                      завьдаж, Алтайн мөнх цасны уулсанд авирах хүртэл.
                     </p>
                     <blockquote>
-                      Your time is limited, so don&apos;t waste it living
-                      someone else&apos;s life. don&apos;t be trapped by dogma -
-                      which is living with the results
+                      Цаг хугацаа хязгаарлагдмал тул өөр хүний амьдралаар амьдрах
+                      хугацаа бүү үр. Өөрийнхөө зүрх сэтгэлийн дуу хоолойг
+                      сонсож, зоригтой алхаж бай.
                     </blockquote>
                     <p>
-                      With worldwide annual spend on digital advertising
-                      surpassing $325 billion, it&apos;s no surprise that
-                      different approaches to online marketing are becoming
-                      available. One of these new approaches is performance
-                      marketing or digital performance marketing. Keep reading
-                      to learn all about performance marketing
+                      Монголын аялал жуулчлалын салбар жил бүр хөгжих хандлагатай
+                      байгаа бөгөөд олон улсын жуулчид Монголын байгалийн үзэсгэлэн,
+                      соёлын өв, уламжлалт нүүдлийн соёл зэрэгт илүү их
+                      анхаарал хандуулж байна. Энэхүү хөгжил нь дотоодын аялал
+                      жуулчлалын үйл ажиллагааг ч урагшлуулж байна.
                     </p>
                     <ul className="checked-list mb-4">
-                      <li>Lorem Ipsum generators on the tend to repeat.</li>
-                      <li>If you are going to use a passage.</li>
-                      <li>Lorem Ipsum generators on the tend to repeat.</li>
-                      <li>Lorem Ipsum generators on the tend to repeat.</li>
-                      <li> If you are going to use a passage.</li>
+                      <li>Морь унах туршлага — тал нутагт чөлөөтэй давхих</li>
+                      <li>Уламжлалт гэрт байрлах — одод тэнгэртэй унтах</li>
+                      <li>Монгол хоол амтлах — хорхог, бууз, цуйван</li>
+                      <li>Бүргэд барих — хүчирхэг шувуутай нүүр тулсан</li>
+                      <li>Наадамд оролцох — бөх, хурд, нум сум</li>
                     </ul>
-                    <h4>Easy & Most Powerful Server Platform.</h4>
+                    <h4>Манай аяллын онцлогууд</h4>
                     <p>
-                      With worldwide annual spend on digital advertising
-                      surpassing $325 billion, it&apos;s no surprise that
-                      different approaches to online marketing are becoming
-                      available. One of these new approaches is performance
-                      marketing or digital performance marketing. Keep reading
-                      to learn all about performance marketing, from how it
-                      works to how it compares to digital marketing. Plus, get
-                      insight into the benefits and risks of performance
-                      marketing and how it can affect your company&apos;s
-                      long-term success and profitability.
+                      Манай баг Монголын бүх бүс нутагт туршлагатай аялал
+                      зохиогчидтой хамтран ажилладаг. Таны аюулгүй байдал,
+                      таатай туршлага бол манай хамгийн чухал зорилго. Аяллын
+                      өмнө бэлтгэл хангах, аяллын турш 24 цагийн тусламж,
+                      аяллын дараа санал хүсэлт авах зэрэг бүх үе шатыг
+                      хариуцдаг. Бидний зорилго нь танд Монголын байгаль,
+                      соёлыг бүрэн дүүрэн мэдрэх боломжийг олоход оршино.
                     </p>
                     <Image className="alignleft" src={two} alt="blog__img" />
                     <p>
-                      With worldwide annual spend on digital advertising
-                      surpassing $325 billion, it&apos;s no surprise that
-                      different approaches to online marketing are becoming
-                      available. One of these new approaches is performance
-                      marketing or digital performance marketing. Keep reading
-                      to learn all about performance marketing
+                      Монголын говийн бүс нутагт аялж байхдаа элсэн мандалд
+                      явган аялал хийх, хадан уулсанд авирах, эртний динозаврын
+                      олдворын газруудаар аялах зэрэг онцгой туршлагыг мэдрэх
+                      боломжтой. Говийн өдөр шөнөгүйлэн өөрчлөгддөг цаг уур
+                      нь өөрийн гэсэн баялаг билэг тэмдэг юм.
                     </p>
                     <p>
-                      With worldwide annual spend on digital advertising
-                      surpassing $325 billion, it&apos;s no surprise that
-                      different approaches to online marketing are becoming
-                      available. One of these new approaches is performance
-                      marketing or digital performance marketing. Keep reading
-                      to learn all about performance marketing
+                      Хөвсгөл нуур бол Монголын хамгийн үзэсгэлэнт газруудын
+                      нэг бөгөөд "Азийн цэнхэр перл" хэмээн алдаршсан. Энд
+                      тайгын ой, цэнхэр мандал, уулс хүрээлэн буй байгаль
+                      нь жуулчдад амар амгалан, адал явдал хоёуланг нь хангадаг.
                     </p>
                   </div>
                 </div>
                 <div className="row tag-share-wrap">
                   <div className="col-lg-8 col-12">
-                    <h4>Releted Tags</h4>
+                    <h4>Холбоотой тагууд</h4>
                     <div className="tagcloud">
-                      <Link href="/news-details">Business</Link>
-                      <Link href="/news-details">Design</Link>
-                      <Link href="/news-details">apps</Link>
-                      <Link href="/news-details">data</Link>
+                      <Link href="/news-details">Аялал</Link>
+                      <Link href="/news-details">Монгол</Link>
+                      <Link href="/news-details">Байгаль</Link>
+                      <Link href="/news-details">Соёл</Link>
                     </div>
                   </div>
                   <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
-                    <h4>Social Share</h4>
+                    <h4>Хуваалцах</h4>
                     <div className="social-share">
                       <Link href="/">
                         <i className="fab fa-facebook-f"></i>
@@ -146,7 +135,7 @@ const BlogDetailsSection = () => {
                 </div>
                 <div className="comments-section-wrap pt-40">
                   <div className="comments-heading">
-                    <h3>03 Comments</h3>
+                    <h3>03 Сэтгэгдэл</h3>
                   </div>
                   <ul className="comments-item-list">
                     {CommentData.map((item) => {
@@ -163,7 +152,7 @@ const BlogDetailsSection = () => {
                               <h5>{item.authorName}</h5>
                               <span>{item.date}</span>
                               <Link href="/" className="theme-btn minimal-btn">
-                                <i className="fal fa-reply"></i>Reply
+                                <i className="fal fa-reply"></i>Хариулах
                               </Link>
                             </div>
                             <div className="comment-text">
@@ -176,7 +165,7 @@ const BlogDetailsSection = () => {
                   </ul>
                 </div>
                 <div className="comment-form-wrap d-block pt-5">
-                  <h3>Post Comment</h3>
+                  <h3>Сэтгэгдэл үлдээх</h3>
                   <CommentForm />
                 </div>
               </div>
@@ -185,7 +174,7 @@ const BlogDetailsSection = () => {
               <div className="main-sidebar sticky-style">
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Search</h3>
+                    <h3>Хайх</h3>
                   </div>
                   <div className="search_widget">
                     <PostSearchForm />
@@ -193,19 +182,19 @@ const BlogDetailsSection = () => {
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Popular Feeds</h3>
+                    <h3>Эрэлттэй нийтлэлүүд</h3>
                   </div>
                   <PopularFeed />
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Categories</h3>
+                    <h3>Ангиллууд</h3>
                   </div>
                   <BlogCategories />
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Never Miss News</h3>
+                    <h3>Мэдээг алдалгүй</h3>
                   </div>
                   <div className="social-link">
                     <Link href="/">
@@ -227,7 +216,7 @@ const BlogDetailsSection = () => {
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Popular Tags</h3>
+                    <h3>Түгээмэл тагууд</h3>
                   </div>
                   <PopularTags />
                 </div>

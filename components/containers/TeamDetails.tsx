@@ -16,21 +16,20 @@ const TeamDetails = () => {
             <div className="col-lg-7">
               <div className="team-details-content">
                 <div className="details-info">
-                  <h3>Salman Ahmed</h3>
-                  <span>Software Engineer</span>
+                  <h3>Бат-Эрдэнэ Дулам</h3>
+                  <span>Аялал жуулчлалын удирдагч</span>
                 </div>
                 <p className="mt-3">
-                  Mauris sapien neque, placerat ut dolor nec, egestas tincidunt
-                  felis. Sed in ornare quam, finibus dui aliquam justo duis eros
-                  quam, semper at libero sed, vehicula the consequat arcu. In
-                  ornare, enim at egestas bibendum, ligula ante congue arcu, sed
-                  ornare sem nulla is nec magna. Morbi faucibus.
+                  Монголын тал нутагт 10 гаруй жилийн туршлагатай аялал жуулчлалын
+                  мэргэжилтэн. Говь, хээрийн бүс нутгуудаар аялал зохиож, гадаадын
+                  жуулчдад Монголын байгаль, соёл, уламжлатыг таниулан мэдээлдэг.
+                  Морь унах, бүргэд барих зэрэг уламжлалт адал явдлыг зохион байгуулдаг.
                 </p>
                 <div className="progress-area mt-4">
                   <div className="progress-wrap">
                     <div className="pro-items">
                       <div className="pro-head">
-                        <h6 className="title">tour package</h6>
+                        <h6 className="title">Аялалын багц</h6>
                         <span className="point">90%</span>
                       </div>
                       <div className="progress">
@@ -42,7 +41,7 @@ const TeamDetails = () => {
                     </div>
                     <div className="pro-items">
                       <div className="pro-head">
-                        <h6 className="title">Travel</h6>
+                        <h6 className="title">Аялал</h6>
                         <span className="point">95%</span>
                       </div>
                       <div className="progress">
@@ -55,7 +54,7 @@ const TeamDetails = () => {
                   </div>
                 </div>
                 <div className="social-icon">
-                  <span>Social Media:</span>
+                  <span>Цахим холбоос:</span>
                   <Link href="/">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
@@ -74,29 +73,25 @@ const TeamDetails = () => {
           </div>
           <div className="team-single-history pt-5">
             <div className="title">
-              <h3>Education Background</h3>
+              <h3>Мэргэжлийн туршлага</h3>
             </div>
             <h5 className="pt-5">
-              Diploma in Web Design <span>2012 - 2014</span>
+              Аялал жуулчлалын удирдагч <span>2014 - 2017</span>
             </h5>
             <p className="mt-3">
-              Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s in the ou
-              standard dummy text ever since the 1500s, when an unknown printer
-              took.Ipsum is simply dummy text of the printing and type setting
-              industry. Lorem Ipsum has been the industry&apos;s in the abouti
-              standard dummy
+              Монголын хойд бүсийн Хөвсгөл, Хэнтий аймгуудаар аялал зохиож,
+              жуулчдад байгалийн үзэсгэлэнт газруудаар хөтчилж байсан. Морин
+              аялал, загасчлалын туршлагатай. Гэр байрлах, уламжлалт хоол
+              хийх зааварчилгаа өгдөг.
             </p>
             <h5 className="pt-5">
-              Degree in UI/UX Design <span>2015 - 2016 </span>
+              Ахлах аялал зохион байгуулагч <span>2018 - 2024 </span>
             </h5>
             <p className="mt-3">
-              Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s in the ou
-              standard dummy text ever since the 1500s, when an unknown printer
-              took.Ipsum is simply dummy text of the printing and type setting
-              industry. Lorem Ipsum has been the industry&apos;s in the abouti
-              standard dummy
+              Говийн бүсийн Говь-Алтай, Баянхонгор, Өмнөговь аймгуудаар
+              олон улсын жуулчдад аялал зохиож байна. Говийн баян бүрд, хадан
+              уулс, эртний динозаврын олдворын газруудаар хөтчилдөг. Олон улсын
+              аялал жуулчлалын мэргэжлийн гэрчилгээтэй.
             </p>
           </div>
         </div>

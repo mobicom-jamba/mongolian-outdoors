@@ -41,16 +41,8 @@ const Footer = () => {
           {/* Column 1 */}
           <div className="col-lg-4">
             <div className="footer-widget p-4 d-flex flex-column align-items-center gap-4">
-              <Link
-                href="/"
-                className="header-logo text-uppercase"
-                style={{
-                  fontSize: "22px",
-                  fontWeight: "bold",
-                  color: "#000",
-                }}
-              >
-                Mongolian Outdoors
+              <Link href="/">
+                <Image src={logo} alt="Mongolian Outdoors" height={60} width={240} style={{ height: 'auto', width: 'auto', maxHeight: 60 }} />
               </Link>
 
               <div className="d-flex flex-column align-items-center gap-3">
