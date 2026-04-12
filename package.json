@@ -11,7 +11,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
-    "next": "^15.2.4",
+    "next": "15.2.8",
     "photoswipe": "^5.4.4",
     "react": "^19.0.0",
     "react-animate-height": "^3.2.3",
