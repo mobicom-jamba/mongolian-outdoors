@@ -29,62 +29,60 @@ const TourDetails = () => {
                 <div className="details-content">
                   <span className="location-icon">
                     <i className="far fa-map-marker-alt"></i>
-                    Хөвсгөл аймаг, Монгол
+                    Khuvsgul Province, Mongolia
                   </span>
                   <h2>
-                    Хөвсгөл нуурын бүс нутагт адал явдал хийх, байгалийн үзэсгэлэнгээр хөөрөх
+                    Adventure & Nature in the Khuvsgul Lake Region
                   </h2>
                   <p className="mb-3">
-                    Бид Монголын байгалийн үзэсгэлэнт газруудаар сонирхолтой
-                    аяллуудыг анхан шатнаас нь мэргэжлийн түвшинд хүртэл
-                    зохиож байна. Хөвсгөл нуур нь Монголын хамгийн гүн цэнхэр
-                    нуур бөгөөд хүрээлэн буй уулс, ой мод, цэвэр агаараараа
-                    жуулчдийн хүсэл зоригийг татдаг. Энд та морь унаж, загас
-                    барьж, ойн дунд алхаж байгальтайгаа нэгдэх боломжтой.
+                    We offer carefully curated tours across Mongolia's most
+                    stunning natural destinations. Khuvsgul Lake is Mongolia's
+                    deepest blue lake, surrounded by mountains, forests, and
+                    pristine air that captivates every traveler. Here you can ride
+                    horses, fish, and hike through the forest to connect with nature.
                   </p>
                   <p className="mb-3">
-                    Аяллын турш орон нутгийн малчин айлд зочилж, уламжлалт
-                    монгол хоол амтлах, гэр байрлах туршлагыг мэдрэнэ.
-                    Хөвсгөлийн тайгын ойн амьтан ургамлын аймаг маш баялаг
-                    бөгөөд бүргэд, илбэх, зээрд зэрэг амьтдыг ажиглах
-                    боломжтой.
+                    During the tour, visit local nomadic families, taste
+                    traditional Mongolian cuisine, and experience staying in a ger.
+                    The taiga forest around Khuvsgul is rich in wildlife — you can
+                    spot eagles, owls, and red deer in their natural habitat.
                   </p>
                   <p>
-                    Манай баг Монголын хойд бүсийн газарзүй, цаг уурын
-                    онцлогийг сайн мэддэг бөгөөд жуулчдад аюулгүй, таатай
-                    аяллын нөхцөлийг бүрдүүлдэг. Бүх аялалд туршлагатай
-                    удирдагч хөтөлнө. Морь унах, гэр байрлах, уламжлалт
-                    ёс заншлын талаар дэлгэрэнгүй зааварчилгаа өгнө.
+                    Our team is deeply familiar with the geography and climate of
+                    Mongolia's northern region, ensuring safe and comfortable travel
+                    conditions. Every tour is led by an experienced guide who
+                    provides detailed guidance on horseback riding, ger camping,
+                    and traditional customs.
                   </p>
                   <div className="destination-list-item">
-                    <h4>Манай онцлогууд</h4>
+                    <h4>Our Highlights</h4>
                     <div className="destination-list">
                       <ul className="list">
                         <li>
                           <i className="flaticon-check"></i>
-                          Орон нутгийн туршлагатай мэргэжилтнүүд
+                          Trusted, Local Travel Experts
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Уян хатан, хялбар захиалга
+                          Flexible, Hassle-Free Bookings
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Шууд хөтөлбөрийн шинэчлэлт
+                          Real-Time Itinerary Updates
                         </li>
                       </ul>
                       <ul className="list">
                         <li>
                           <i className="flaticon-check"></i>
-                          Уян хатан цуцлах нөхцөл
+                          Flexible Cancellation Policies
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Тусгайлан зохиосон аяллын туршлага
+                          Customized Travel Experiences
                         </li>
                         <li>
                           <i className="flaticon-check"></i>
-                          Онцгой хөнгөлөлттэй аялал
+                          Exclusive Travel Deals
                         </li>
                       </ul>
                     </div>
@@ -94,55 +92,55 @@ const TourDetails = () => {
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-connection"></i>
-                          <h5>Үнэгүй Wi-Fi</h5>
+                          <h5>Free Wi-Fi</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-cyber-security"></i>
-                          <h5>Аюулгүй байдлын баталгаа</h5>
+                          <h5>Security Guarantee</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-guide"></i>
-                          <h5>Мэргэжлийн хөтөч</h5>
+                          <h5>Professional Guide</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-gym"></i>
-                          <h5>Биеийн тамирын заал</h5>
+                          <h5>Gym Center</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-cycling"></i>
-                          <h5>Унадаг дугуй</h5>
+                          <h5>Cycling</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-hiking"></i>
-                          <h5>Явган аялал</h5>
+                          <h5>Hiking</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-googles"></i>
-                          <h5>Усанд сэлэх & загасчлах</h5>
+                          <h5>Swimming & Fishing</h5>
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-6">
                         <div className="icon">
                           <i className="flaticon-solar-system"></i>
-                          <h5>Нарны эрчим хүч</h5>
+                          <h5>Solar Energy</h5>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="faq-items">
-                    <h4>Аяллын хөтөлбөр</h4>
+                    <h4>Tour Plan</h4>
                     <div className="faq-accordion">
                       <div className="accordion" id="accordion2">
                         {FaqTwoData.slice(0, 4).map((item, index) => {
@@ -176,7 +174,7 @@ const TourDetails = () => {
                     </div>
                   </div>
                   <div className="map-area">
-                    <h3>Газрын зураг дээр харах</h3>
+                    <h3>View on Map</h3>
                     <GoogleMap />
                   </div>
                   <ClientReview />
@@ -186,10 +184,10 @@ const TourDetails = () => {
             <div className="col-xl-4 col-lg-5">
               <div className="tour-details-sidebar sticky-style">
                 <div className="tour-sidebar-items">
-                  <h3>Аялал захиалах</h3>
+                  <h3>Tour Booking</h3>
                   <ul className="form-list">
                     <li>
-                      Эхлэх огноо:
+                      From Date:
                       <div className="form-clt">
                         <div id="datepicker" className="input-group date">
                           <DatePick />
@@ -200,7 +198,7 @@ const TourDetails = () => {
                       </div>
                     </li>
                     <li>
-                      Цаг:
+                      Time:
                       <div className="form-clt d-flex gap-3">
                         <label className="checkbox-single">
                           <span className="d-flex gap-xl-3 gap-2 align-items-center">
@@ -224,10 +222,10 @@ const TourDetails = () => {
                     </li>
                   </ul>
                   <div className="tickets-list">
-                    <p>Тасалбар</p>
+                    <p>Tickets</p>
                     <ul>
                       <li>
-                        18+ нас: <b>168₮</b>
+                        18+ Years: <b>$168</b>
                         <div className="form-clt">
                           <div className="form">
                             <select className="single-select w-100">
@@ -240,7 +238,7 @@ const TourDetails = () => {
                         </div>
                       </li>
                       <li>
-                        18- нас: <b>100₮</b>
+                        18- Years: <b>$100</b>
                         <div className="form-clt">
                           <div className="form">
                             <select className="single-select w-100">
@@ -255,7 +253,7 @@ const TourDetails = () => {
                     </ul>
                   </div>
                   <div className="extra-items">
-                    <p>Нэмэлт үйлчилгээ:</p>
+                    <p>Add Extra:</p>
                     <label className="checkbox-single d-flex justify-content-between align-items-center">
                       <span className="d-flex gap-xl-3 gap-2 align-items-center">
                         <span className="checkbox-area d-center">
@@ -263,10 +261,10 @@ const TourDetails = () => {
                           <span className="checkmark d-center"></span>
                         </span>
                         <span className="text-color">
-                          Захиалга бүрт нэмэлт үйлчилгээ
+                          Add service per booking
                         </span>
                       </span>
-                      <span className="text-color">45₮</span>
+                      <span className="text-color">$45</span>
                     </label>
                     <label className="checkbox-single d-flex justify-content-between align-items-center">
                       <span className="d-flex gap-xl-3 gap-2 align-items-center">
@@ -275,21 +273,21 @@ const TourDetails = () => {
                           <span className="checkmark d-center"></span>
                         </span>
                         <span className="text-color">
-                          Хүн бүрт нэмэлт үйлчилгээ
+                          Add service per person
                         </span>
                       </span>
-                      <span className="text-color">35₮</span>
+                      <span className="text-color">$35</span>
                     </label>
                   </div>
                   <ul className="total-list">
-                    <li>Нийт:</li>
-                    <li>80₮</li>
+                    <li>Total:</li>
+                    <li>$80</li>
                   </ul>
                   <Link href="/tour-details" className="theme-btn">
-                    <span>Захиалах</span>{" "}
+                    <span>Book Now</span>{" "}
                     <i className="far fa-long-arrow-right"></i>
                   </Link>
-                  <p className="text">Тусламж хэрэгтэй юу?</p>
+                  <p className="text">Need any help?</p>
                 </div>
                 <div
                   className="offer-card bg-cover"
@@ -298,7 +296,7 @@ const TourDetails = () => {
                       "url(/images/destinations/offter-card.jpg)",
                   }}
                 >
-                  <h3>Одоо захиалж, онцгой хөнгөлөлт эдлээрэй!</h3>
+                  <h3>Book Now and Enjoy Amazing Savings!</h3>
                   <Image src={discount} alt="img" />
                 </div>
               </div>

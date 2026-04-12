@@ -33,7 +33,7 @@ const OffCanvasMenu: React.FC<OffCanvasMenuProps> = ({
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <Image src={logo} alt="logo-img" priority height={40} width={160} style={{ height: 'auto', width: 'auto', maxHeight: 40 }} />
+                    <Image src={logo} alt="logo-img" priority height={60} width={60} style={{ borderRadius: '50%', objectFit: 'cover' }} />
                   </Link>
                 </div>
                 <div className="offcanvas__close">
@@ -44,9 +44,9 @@ const OffCanvasMenu: React.FC<OffCanvasMenuProps> = ({
               </div>
               <h3 className="offcanvas-title">Mongolian Outdoors</h3>
               <p>
-                Монголын байгалийн үзэсгэлэнт газруудыг
+                Discover the beauty of Mongolia's
                 <br />
-                илэрхийлэх аялал жуулчлалын төв,
+                breathtaking natural landscapes,
               </p>
               <div className="mobile-menu fix mb-3 mean-container">
                 <div className="offcanvas-menu__list">

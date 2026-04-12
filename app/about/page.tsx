@@ -4,7 +4,6 @@ import ChooseSection from "@/components/containers/ChooseSection";
 import MarqueeSection from "@/components/containers/MarqueeSection";
 import Brand from "@/components/containers/Brand";
 import Footer from "@/components/layout/footer/Footer";
-import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import InitAnimations from "@/components/layout/InitAnimations";
 import TourSection from "@/components/containers/TourSection";
@@ -23,7 +22,6 @@ const page = () => {
       {/* <CtaTwo /> */}
       <TourSection />
       <Footer />
-      <CustomCursor />
       <ScrollProgressButton />
       <InitAnimations />
     </>

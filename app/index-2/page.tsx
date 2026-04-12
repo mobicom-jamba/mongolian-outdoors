@@ -12,7 +12,6 @@ import TestimonialTwo from "@/components/containers/TestimonialTwo";
 import Faq from "@/components/containers/Faq";
 import NewsSection from "@/components/containers/NewsSection";
 import Footer from "@/components/layout/footer/Footer";
-import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import InitAnimations from "@/components/layout/InitAnimations";
 
@@ -33,7 +32,6 @@ const page = () => {
       <NewsSection />
       <InstagramSection />
       <Footer />
-      <CustomCursor />
       <ScrollProgressButton />
       <InitAnimations />
     </>

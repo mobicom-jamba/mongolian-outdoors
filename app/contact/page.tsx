@@ -3,7 +3,6 @@ import Breadcrumb from "@/components/layout/banner/Breadcrumb";
 import ContactSection from "@/components/containers/ContactSection";
 import GoogleMap from "@/components/containers/GoogleMap";
 import Footer from "@/components/layout/footer/Footer";
-import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import InitAnimations from "@/components/layout/InitAnimations";
 
@@ -15,7 +14,6 @@ const page = () => {
       <ContactSection />
       <GoogleMap />
       <Footer />
-      <CustomCursor />
       <ScrollProgressButton />
       <InitAnimations />
     </>

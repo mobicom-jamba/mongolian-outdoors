@@ -55,7 +55,7 @@ const Header = () => {
                 <div className="header-left">
                   <div className="logo">
                     <Link href="/">
-                      <Image src={logo} alt="Mongolian Outdoors" height={40} width={160} style={{ height: 'auto', width: 'auto', maxHeight: 40 }} />
+                      <Image src={logo} alt="Mongolian Outdoors" height={60} width={60} style={{ borderRadius: '50%', objectFit: 'cover' }} />
                     </Link>
                   </div>
                 </div>

@@ -16,20 +16,21 @@ const TeamDetails = () => {
             <div className="col-lg-7">
               <div className="team-details-content">
                 <div className="details-info">
-                  <h3>Бат-Эрдэнэ Дулам</h3>
-                  <span>Аялал жуулчлалын удирдагч</span>
+                  <h3>Bat-Erdene Dulam</h3>
+                  <span>Tour Guide</span>
                 </div>
                 <p className="mt-3">
-                  Монголын тал нутагт 10 гаруй жилийн туршлагатай аялал жуулчлалын
-                  мэргэжилтэн. Говь, хээрийн бүс нутгуудаар аялал зохиож, гадаадын
-                  жуулчдад Монголын байгаль, соёл, уламжлатыг таниулан мэдээлдэг.
-                  Морь унах, бүргэд барих зэрэг уламжлалт адал явдлыг зохион байгуулдаг.
+                  A travel professional with over 10 years of experience in
+                  Mongolia's steppe. Organizes tours across the Gobi and grassland
+                  regions, introducing foreign visitors to Mongolia's nature,
+                  culture, and traditions. Specializes in horseback riding and
+                  eagle hunting adventures.
                 </p>
                 <div className="progress-area mt-4">
                   <div className="progress-wrap">
                     <div className="pro-items">
                       <div className="pro-head">
-                        <h6 className="title">Аялалын багц</h6>
+                        <h6 className="title">Tour Package</h6>
                         <span className="point">90%</span>
                       </div>
                       <div className="progress">
@@ -41,7 +42,7 @@ const TeamDetails = () => {
                     </div>
                     <div className="pro-items">
                       <div className="pro-head">
-                        <h6 className="title">Аялал</h6>
+                        <h6 className="title">Travel</h6>
                         <span className="point">95%</span>
                       </div>
                       <div className="progress">
@@ -54,7 +55,7 @@ const TeamDetails = () => {
                   </div>
                 </div>
                 <div className="social-icon">
-                  <span>Цахим холбоос:</span>
+                  <span>Social Media:</span>
                   <Link href="/">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
@@ -73,25 +74,26 @@ const TeamDetails = () => {
           </div>
           <div className="team-single-history pt-5">
             <div className="title">
-              <h3>Мэргэжлийн туршлага</h3>
+              <h3>Professional Experience</h3>
             </div>
             <h5 className="pt-5">
-              Аялал жуулчлалын удирдагч <span>2014 - 2017</span>
+              Tour Guide <span>2014 - 2017</span>
             </h5>
             <p className="mt-3">
-              Монголын хойд бүсийн Хөвсгөл, Хэнтий аймгуудаар аялал зохиож,
-              жуулчдад байгалийн үзэсгэлэнт газруудаар хөтчилж байсан. Морин
-              аялал, загасчлалын туршлагатай. Гэр байрлах, уламжлалт хоол
-              хийх зааварчилгаа өгдөг.
+              Organized tours in Mongolia's northern regions of Khuvsgul and
+              Khentii, guiding visitors through stunning natural landscapes.
+              Experienced in horseback riding and fishing tours. Provides
+              guidance on ger camping and traditional cooking.
             </p>
             <h5 className="pt-5">
-              Ахлах аялал зохион байгуулагч <span>2018 - 2024 </span>
+              Senior Tour Organizer <span>2018 - 2024 </span>
             </h5>
             <p className="mt-3">
-              Говийн бүсийн Говь-Алтай, Баянхонгор, Өмнөговь аймгуудаар
-              олон улсын жуулчдад аялал зохиож байна. Говийн баян бүрд, хадан
-              уулс, эртний динозаврын олдворын газруудаар хөтчилдөг. Олон улсын
-              аялал жуулчлалын мэргэжлийн гэрчилгээтэй.
+              Organizes tours for international visitors across the Gobi region
+              including Gobi-Altai, Bayankhongor, and Omnogovi provinces.
+              Guides through Gobi oases, rocky mountains, and ancient dinosaur
+              fossil sites. Holds an international tourism professional
+              certificate.
             </p>
           </div>
         </div>

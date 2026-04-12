@@ -6,26 +6,26 @@ const CommentData = [
   {
     id: 0,
     authorImage: one,
-    authorName: "Ганболд Батхүү",
-    date: "2025 оны 1-р сарын 25",
+    authorName: "Ganbold Batkhuu",
+    date: "25th January 2025",
     comment:
-      "Монголын тал нутагт морь унаж аялсан туршлага минь үнэхээр гайхалтай байлаа. Уулс хүрээлэн буй ногоон хөндийгөөр давхиж, уламжлалт гэрт байрласан нь мартагдашгүй дурсгал боллоо.",
+      "My experience horseback riding across Mongolia's steppe was truly amazing. Galloping through green valleys surrounded by mountains and staying in a traditional ger created unforgettable memories.",
   },
   {
     id: 1,
     authorImage: two,
-    authorName: "Сарангэрэл Дулам",
-    date: "2025 оны 2-р сарын 21",
+    authorName: "Sarangerel Dulam",
+    date: "21st February 2025",
     comment:
-      "Хөвсгөл нуурын аялал нь байгалийн үзэсгэлэнгээр хангамжтай байлаа. Цэнхэр мандалд завьдаж, тайгын ойд алхаж, оройд нь одод тэнгэртэй унтах нь онцгой туршлага байсан.",
+      "The Khuvsgul Lake tour was a feast of natural beauty. Kayaking on crystal-clear waters, hiking through the taiga forest, and sleeping under the stars was a truly unique experience.",
   },
   {
     id: 2,
     authorImage: three,
-    authorName: "Мөнхбаатар Амар",
-    date: "2021 оны 1-р сарын 29",
+    authorName: "Munkhbaatar Amar",
+    date: "29th January 2021",
     comment:
-      "Говийн бүс нутагт аялж байхдаа элсэн мандалд явган аялал хийж, хадан уулсанд авирсан нь маш сонирхолтой байлаа. Бүргэд барих ёслолд оролцсон нь хамгийн сэтгэл хөдөлгөм мөч байсан.",
+      "Traveling through the Gobi region was incredibly fascinating — hiking the sand dunes, climbing rocky mountains, and participating in the eagle hunting ceremony was the most moving moment of all.",
   },
 ];
 

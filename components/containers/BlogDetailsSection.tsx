@@ -19,30 +19,29 @@ const BlogDetailsSection = () => {
               <div className="blog-post-details border-wrap mt-0">
                 <div className="single-blog-post post-details mt-0">
                   <div className="post-content pt-0">
-                    <h2>Монголын тал нутагт адал явдал хийх нь</h2>
+                    <h2>Adventuring Through Mongolia's Great Steppe</h2>
                     <div className="post-meta mt-3">
                       <span>
-                        <i className="fal fa-user"></i>Бат-Эрдэнэ
+                        <i className="fal fa-user"></i>Bat-Erdene
                       </span>
                       <span>
-                        <i className="fal fa-comments"></i>15 Сэтгэгдэл
+                        <i className="fal fa-comments"></i>15 Comments
                       </span>
                       <span>
-                        <i className="fal fa-calendar-alt"></i>2025 оны 2-р сарын 4
+                        <i className="fal fa-calendar-alt"></i>4th February 2025
                       </span>
                     </div>
                     <p>
-                      Монголын тал нутаг нь дэлхийн хамгийн өргөн уудам
-                      бэлчээрт хамрагддаг бөгөөд эндхийн байгаль, соёл, уламжлал
-                      нь жуулчдад онцгой туршлагаар хангадаг. Морь унаж тал нутгаар
-                      давхих, гэрт байрлаж одод тэнгэртэй унтах, уламжлалт монгол
-                      хоол амтлах зэрэг нь мартагдашгүй дурсгал бүтээдэг.
+                      Mongolia's vast steppe is part of the world's largest grassland,
+                      where nature, culture, and tradition offer travelers a truly
+                      unique experience. Horseback riding across the open plains,
+                      sleeping in a ger under the stars, and tasting traditional
+                      Mongolian cuisine create unforgettable memories.
                     </p>
                     <p>
-                      Бид олон төрлийн онцгой арга хэмжээг зохион байгуулж
-                      байна. Наадам хурд, бүргэд барих ёслол, морин аялал, говийн
-                      экспедиц, загасчлалын тэмцээн зэрэг адал явдалт үйл
-                      ажиллагаанууд багтана.
+                      We organize a variety of special events including Naadam
+                      horse racing, eagle hunting ceremonies, horseback expeditions,
+                      Gobi desert adventures, and fishing tournaments.
                     </p>
                     <Image
                       src={one}
@@ -50,73 +49,70 @@ const BlogDetailsSection = () => {
                       className="single-post-image"
                     />
                     <h2 className="title-anim">
-                      Монголд аялж байх хамгийн шалтгаан: Байгаль, соёл, адал явдал
+                      Why You Should Travel to Mongolia: Nature, Culture & Adventure
                     </h2>
                     <p>
-                      Монгол орон нь Азийн зүрхэнд орших бөгөөд говь, хээр,
-                      ой хөндий, уулс гэсэн дөрвөн байгалийн бүстэй. Энэхүү
-                      газарзүйн олон хувилбар нь жуулчдад янз бүрийн адал
-                      явдал хийх боломжийг олгодог. Говийн элсэн мандалд явган
-                      аялал хийхээс эхлээд Хөвсгөл нуурын цэнхэр мандалд
-                      завьдаж, Алтайн мөнх цасны уулсанд авирах хүртэл.
+                      Mongolia sits at the heart of Asia, featuring four distinct
+                      natural zones: desert, steppe, forest, and mountains. This
+                      geographic diversity gives travelers the chance to enjoy a
+                      wide range of adventures — from hiking the Gobi sand dunes
+                      to kayaking on Khuvsgul Lake and climbing the snow-capped
+                      Altai Mountains.
                     </p>
                     <blockquote>
-                      Цаг хугацаа хязгаарлагдмал тул өөр хүний амьдралаар амьдрах
-                      хугацаа бүү үр. Өөрийнхөө зүрх сэтгэлийн дуу хоолойг
-                      сонсож, зоригтой алхаж бай.
+                      Your time is limited, so don't waste it living someone else's
+                      life. Listen to your heart's voice and walk with courage.
                     </blockquote>
                     <p>
-                      Монголын аялал жуулчлалын салбар жил бүр хөгжих хандлагатай
-                      байгаа бөгөөд олон улсын жуулчид Монголын байгалийн үзэсгэлэн,
-                      соёлын өв, уламжлалт нүүдлийн соёл зэрэгт илүү их
-                      анхаарал хандуулж байна. Энэхүү хөгжил нь дотоодын аялал
-                      жуулчлалын үйл ажиллагааг ч урагшлуулж байна.
+                      Mongolia's tourism industry is growing every year, with
+                      international travelers increasingly drawn to its natural
+                      beauty, cultural heritage, and nomadic traditions. This
+                      growth is also boosting domestic tourism activities.
                     </p>
                     <ul className="checked-list mb-4">
-                      <li>Морь унах туршлага — тал нутагт чөлөөтэй давхих</li>
-                      <li>Уламжлалт гэрт байрлах — одод тэнгэртэй унтах</li>
-                      <li>Монгол хоол амтлах — хорхог, бууз, цуйван</li>
-                      <li>Бүргэд барих — хүчирхэг шувуутай нүүр тулсан</li>
-                      <li>Наадамд оролцох — бөх, хурд, нум сум</li>
+                      <li>Horseback riding — gallop across the open steppe</li>
+                      <li>Stay in a traditional ger — sleep under the stars</li>
+                      <li>Taste Mongolian cuisine — khorkhog, buuz, khuushuur</li>
+                      <li>Eagle hunting — face-to-face with majestic birds</li>
+                      <li>Join Naadam Festival — wrestling, racing, archery</li>
                     </ul>
-                    <h4>Манай аяллын онцлогууд</h4>
+                    <h4>Our Tour Highlights</h4>
                     <p>
-                      Манай баг Монголын бүх бүс нутагт туршлагатай аялал
-                      зохиогчидтой хамтран ажилладаг. Таны аюулгүй байдал,
-                      таатай туршлага бол манай хамгийн чухал зорилго. Аяллын
-                      өмнө бэлтгэл хангах, аяллын турш 24 цагийн тусламж,
-                      аяллын дараа санал хүсэлт авах зэрэг бүх үе шатыг
-                      хариуцдаг. Бидний зорилго нь танд Монголын байгаль,
-                      соёлыг бүрэн дүүрэн мэдрэх боломжийг олоход оршино.
+                      Our team partners with experienced tour operators across
+                      every region of Mongolia. Your safety and enjoyment are our
+                      top priorities. We handle every step — from pre-trip
+                      preparation to 24/7 on-tour support and post-tour feedback.
+                      Our goal is to help you fully experience Mongolia's nature
+                      and culture.
                     </p>
                     <Image className="alignleft" src={two} alt="blog__img" />
                     <p>
-                      Монголын говийн бүс нутагт аялж байхдаа элсэн мандалд
-                      явган аялал хийх, хадан уулсанд авирах, эртний динозаврын
-                      олдворын газруудаар аялах зэрэг онцгой туршлагыг мэдрэх
-                      боломжтой. Говийн өдөр шөнөгүйлэн өөрчлөгддөг цаг уур
-                      нь өөрийн гэсэн баялаг билэг тэмдэг юм.
+                      Traveling through Mongolia's Gobi region offers extraordinary
+                      experiences — hiking sand dunes, climbing rocky mountains,
+                      and exploring ancient dinosaur fossil sites. The Gobi's
+                      dramatic day-to-night climate shifts are a signature of its
+                      unique character.
                     </p>
                     <p>
-                      Хөвсгөл нуур бол Монголын хамгийн үзэсгэлэнт газруудын
-                      нэг бөгөөд "Азийн цэнхэр перл" хэмээн алдаршсан. Энд
-                      тайгын ой, цэнхэр мандал, уулс хүрээлэн буй байгаль
-                      нь жуулчдад амар амгалан, адал явдал хоёуланг нь хангадаг.
+                      Khuvsgul Lake is one of Mongolia's most beautiful destinations,
+                      famously known as the "Blue Pearl of Asia." Surrounded by
+                      taiga forest, crystal-clear waters, and mountains, it offers
+                      travelers both serenity and adventure.
                     </p>
                   </div>
                 </div>
                 <div className="row tag-share-wrap">
                   <div className="col-lg-8 col-12">
-                    <h4>Холбоотой тагууд</h4>
+                    <h4>Related Tags</h4>
                     <div className="tagcloud">
-                      <Link href="/news-details">Аялал</Link>
-                      <Link href="/news-details">Монгол</Link>
-                      <Link href="/news-details">Байгаль</Link>
-                      <Link href="/news-details">Соёл</Link>
+                      <Link href="/news-details">Travel</Link>
+                      <Link href="/news-details">Mongolia</Link>
+                      <Link href="/news-details">Nature</Link>
+                      <Link href="/news-details">Culture</Link>
                     </div>
                   </div>
                   <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
-                    <h4>Хуваалцах</h4>
+                    <h4>Social Share</h4>
                     <div className="social-share">
                       <Link href="/">
                         <i className="fab fa-facebook-f"></i>
@@ -135,7 +131,7 @@ const BlogDetailsSection = () => {
                 </div>
                 <div className="comments-section-wrap pt-40">
                   <div className="comments-heading">
-                    <h3>03 Сэтгэгдэл</h3>
+                    <h3>03 Comments</h3>
                   </div>
                   <ul className="comments-item-list">
                     {CommentData.map((item) => {
@@ -152,7 +148,7 @@ const BlogDetailsSection = () => {
                               <h5>{item.authorName}</h5>
                               <span>{item.date}</span>
                               <Link href="/" className="theme-btn minimal-btn">
-                                <i className="fal fa-reply"></i>Хариулах
+                                <i className="fal fa-reply"></i>Reply
                               </Link>
                             </div>
                             <div className="comment-text">
@@ -165,7 +161,7 @@ const BlogDetailsSection = () => {
                   </ul>
                 </div>
                 <div className="comment-form-wrap d-block pt-5">
-                  <h3>Сэтгэгдэл үлдээх</h3>
+                  <h3>Post Comment</h3>
                   <CommentForm />
                 </div>
               </div>
@@ -174,7 +170,7 @@ const BlogDetailsSection = () => {
               <div className="main-sidebar sticky-style">
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Хайх</h3>
+                    <h3>Search</h3>
                   </div>
                   <div className="search_widget">
                     <PostSearchForm />
@@ -182,19 +178,19 @@ const BlogDetailsSection = () => {
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Эрэлттэй нийтлэлүүд</h3>
+                    <h3>Popular Feeds</h3>
                   </div>
                   <PopularFeed />
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Ангиллууд</h3>
+                    <h3>Categories</h3>
                   </div>
                   <BlogCategories />
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Мэдээг алдалгүй</h3>
+                    <h3>Never Miss News</h3>
                   </div>
                   <div className="social-link">
                     <Link href="/">
@@ -216,7 +212,7 @@ const BlogDetailsSection = () => {
                 </div>
                 <div className="single-sidebar-widget">
                   <div className="wid-title">
-                    <h3>Түгээмэл тагууд</h3>
+                    <h3>Popular Tags</h3>
                   </div>
                   <PopularTags />
                 </div>

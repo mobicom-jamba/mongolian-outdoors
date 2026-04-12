@@ -21,28 +21,13 @@ const Footer = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="container py-5">
-        {/* Newsletter */}
-        <div className="footer-newsletter-items text-center mb-5">
-          <h2 className="mb-3">Welcome to the Mongolia</h2>
-          <div className="d-inline-flex align-items-center bg-white rounded overflow-hidden">
-            <input
-              type="email"
-              className="form-control border-0 px-3 py-2"
-              placeholder="Your email address"
-            />
-            <button className="btn btn-primary px-4">
-              Subscribe <i className="far fa-paper-plane ms-2"></i>
-            </button>
-          </div>
-        </div>
-
         {/* Main Widgets */}
         <div className="row gx-5 gy-4 text-center">
-          {/* Column 1 */}
-          <div className="col-lg-4">
+          {/* Column 1 - Logo & Contact */}
+          <div className="col-lg-6">
             <div className="footer-widget p-4 d-flex flex-column align-items-center gap-4">
               <Link href="/">
-                <Image src={logo} alt="Mongolian Outdoors" height={60} width={240} style={{ height: 'auto', width: 'auto', maxHeight: 60 }} />
+                <Image src={logo} alt="Mongolian Outdoors" height={90} width={90} style={{ borderRadius: '50%', objectFit: 'cover' }} />
               </Link>
 
               <div className="d-flex flex-column align-items-center gap-3">
@@ -60,8 +45,8 @@ const Footer = () => {
                   <div>
                     <small className="text-uppercase">Email Us</small>
                     <h6 className="mb-0">
-                      <Link href="mailto:info@example.com">
-                        info@example.com
+                      <Link href="mailto:info@mongolianoutdoors.mn">
+                        info@mongolianoutdoors.mn
                       </Link>
                     </h6>
                   </div>
@@ -84,8 +69,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2 */}
-          <div className="col-lg-4">
+          {/* Column 2 - Pages */}
+          <div className="col-lg-6">
             <div className="footer-widget p-4 d-flex flex-column align-items-center gap-4">
               <h3 className="widget-title text-uppercase letter-spacing">
                 Pages
@@ -99,29 +84,6 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
-
-          {/* Column 3 */}
-          <div className="col-lg-4">
-            <div className="footer-widget p-4 d-flex flex-column align-items-center gap-4">
-              <h3 className="widget-title text-uppercase letter-spacing">
-                Quick Contact
-              </h3>
-              <div className="d-flex flex-column align-items-center gap-3">
-                <div className="d-flex align-items-center gap-2">
-                  <Image src={call} alt="call" width={24} height={24} />
-                  <div>
-                    <small className="text-uppercase">Холбогдох</small>
-                    <h6 className="mb-0">
-                      <Link href="tel:+97680813636">+976 8081-3636</Link>
-                    </h6>
-                  </div>
-                </div>
-              </div>
-              <Link href="/tour-details" className="">
-                Дэлгэрэнгүй <i className="far fa-long-arrow-right ms-2"></i>
-              </Link>
             </div>
           </div>
         </div>

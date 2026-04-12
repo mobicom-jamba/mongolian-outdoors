@@ -11,7 +11,6 @@ import CtaTwo from "@/components/containers/CtaTwo";
 import FaqTwo from "@/components/containers/FaqTwo";
 import NewsSectionThree from "@/components/containers/NewsSectionThree";
 import Footer from "@/components/layout/footer/Footer";
-import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import InitAnimations from "@/components/layout/InitAnimations";
 
@@ -32,7 +31,6 @@ const page = () => {
       <FaqTwo />
       <NewsSectionThree />
       <Footer />
-      <CustomCursor />
       <ScrollProgressButton />
       <InitAnimations />
     </>
