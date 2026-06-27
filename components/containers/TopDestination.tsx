@@ -1,11 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import DestinationData from "@/public/data/destination-data";
+import { getPayloadClient } from "@/lib/payload";
+import { mediaProps } from "@/lib/media";
 import discount from "@/public/images/cta/discount.png";
 import bag from "@/public/images/cta/bag.png";
 import shape from "@/public/images/cta/olane-shape.png";
 
-const TopDestination = () => {
+const TopDestination = async () => {
+  const payload = await getPayloadClient();
+  const { docs: destinations } = await payload.find({
+    collection: "destinations",
+    limit: 8,
+    depth: 1,
+    sort: "createdAt",
+  });
+
   return (
     <section className="top-destination-section-4 section-padding pb-0">
       <div className="container">
@@ -34,23 +43,31 @@ const TopDestination = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <span>Дэлгэрэнгүй</span>{" "}
+            <span>Read More</span>{" "}
             <i className="far fa-long-arrow-right"></i>
           </Link>
         </div>
         <div className="row">
-          {DestinationData.map((item) => {
+          {destinations.map((item, index) => {
+            const img = mediaProps(item.image, undefined, { width: 64, height: 64 });
             return (
               <div
                 className="col-xl-3 col-lg-4 col-md-6 "
                 data-aos-duration="800"
                 data-aos="fade-up"
-                data-aos-delay="200"
+                data-aos-delay={`${((index % 4) + 1) * 200}`}
                 key={item.id}
               >
                 <div className="destination-feature-box van-tilt">
                   <div className="icon">
-                    <Image src={item.image} alt={item.type} />
+                    {img && (
+                      <Image
+                        src={img.src}
+                        alt={img.alt || item.type}
+                        width={img.width}
+                        height={img.height}
+                      />
+                    )}
                   </div>
                   <div className="content">
                     <h6>{item.type}</h6>
@@ -83,7 +100,7 @@ const TopDestination = () => {
             </h2>
           </div>
           <Link
-            href="/tour-details"
+            href="/tour-list"
             className="theme-btn "
             data-aos-duration="800"
             data-aos="fade-up"

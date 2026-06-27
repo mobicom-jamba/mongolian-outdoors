@@ -22,7 +22,7 @@ const TravelLocations = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <span>Дэлгэрэнгүй</span>{" "}
+            <span>Read More</span>{" "}
             <i className="far fa-long-arrow-right"></i>
           </Link>
         </div>
@@ -40,13 +40,13 @@ const TravelLocations = () => {
                   <div className="destinations-img">
                     <Image src={item.image} alt={item.location} />
                     <div className="icon">
-                      <Link href={`${item.destination}`}>
+                      <Link href="/destination">
                         <i className="fas fa-arrow-right"></i>
                       </Link>
                     </div>
                     <ul className="destinations-content">
                       <li className="title">
-                        <Link href={`${item.destination}`}>
+                        <Link href="/destination">
                           {item.location}
                         </Link>
                       </li>

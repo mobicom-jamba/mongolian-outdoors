@@ -37,7 +37,7 @@ const TrendyLocation = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <span>Дэлгэрэнгүй</span>{" "}
+            <span>Read More</span>{" "}
             <i className="far fa-long-arrow-right"></i>
           </Link>
         </div>

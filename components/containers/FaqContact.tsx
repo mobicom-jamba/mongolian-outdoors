@@ -1,4 +1,5 @@
 import Link from "next/link";
+import InquiryForm from "@/components/containers/forms/InquiryForm";
 
 const FaqContact = () => {
   return (
@@ -13,74 +14,7 @@ const FaqContact = () => {
                   We offer carefully curated destinations and tours that capture
                   the true essence of location, ensuring you experience.
                 </p>
-                <form
-                  action="#"
-                  id="contact-form1"
-                  method="POST"
-                  className="contact-form-items"
-                >
-                  <div className="row g-4">
-                    <div
-                      className="col-lg-6 "
-                      data-aos-duration="800"
-                      data-aos="fade-up"
-                      data-aos-delay="300"
-                    >
-                      <div className="form-clt">
-                        <input
-                          type="text"
-                          name="name"
-                          id="email11"
-                          placeholder="Enter email"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="col-lg-6 "
-                      data-aos-duration="800"
-                      data-aos="fade-up"
-                      data-aos-delay="700"
-                    >
-                      <div className="form-clt">
-                        <input
-                          type="text"
-                          name="name"
-                          id="name22"
-                          placeholder="Phone Number"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="col-lg-12 "
-                      data-aos-duration="800"
-                      data-aos="fade-up"
-                      data-aos-delay="500"
-                    >
-                      <div className="form-clt">
-                        <input
-                          type="text"
-                          name="email"
-                          id="name333"
-                          placeholder="Enter name"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      className="col-lg-12 "
-                      data-aos-duration="800"
-                      data-aos="fade-up"
-                      data-aos-delay="900"
-                    >
-                      <div className="form-clt">
-                        <textarea
-                          name="message"
-                          id="message4"
-                          placeholder="Enter message..."
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                <InquiryForm />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6">

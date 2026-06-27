@@ -35,8 +35,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${prompt.variable} ${nunito.variable}`}>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${prompt.variable} ${nunito.variable}`}
+        suppressHydrationWarning
+      >
+        {/* Satoshi (Fontshare) — heavy display face for the hero headline */}
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500&display=swap"
+        />
         {children}
       </body>
     </html>

@@ -4,9 +4,10 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import DiscoverTourData from "@/public/data/discover-tour";
+import type { Tour } from "@/payload-types";
+import { mediaProps } from "@/lib/media";
 
-const TourDiscover = () => {
+const TourDiscover = ({ tours }: { tours: Tour[] }) => {
   return (
     <section
       className="tour-descover-section section-padding fix bg-cover"
@@ -83,60 +84,69 @@ const TourDiscover = () => {
                   }}
                   className="swiper-wrapper"
                 >
-                  {DiscoverTourData.map((item) => (
-                    <SwiperSlide key={item.id}>
-                      <div className="swiper-slide">
-                        <div className="tour-card-item">
-                          <div className="tour-image">
-                            <Image src={item.image} alt={item.title} />
-                          </div>
-                          <div className="tour-content">
-                            <h6>
-                              Entry From <span>${item.price}</span> $
-                              {item.discount}
-                            </h6>
-                            <h4>
-                              <Link href={`${item.destination}`}>
-                                {item.title}
-                              </Link>
-                            </h4>
-                            <ul>
-                              <li>
-                                <i className="far fa-map-marker-alt"></i>
-                                {item.spot}
-                              </li>
-                            </ul>
-                            <div className="list">
+                  {tours.map((item) => {
+                    const img = mediaProps(item.image, "card");
+                    return (
+                      <SwiperSlide key={item.id}>
+                        <div className="swiper-slide">
+                          <div className="tour-card-item">
+                            <div className="tour-image">
+                              {img && (
+                                <Image
+                                  src={img.src}
+                                  alt={img.alt || item.spot}
+                                  width={img.width}
+                                  height={img.height}
+                                />
+                              )}
+                            </div>
+                            <div className="tour-content">
+                              <h6>
+                                Entry From <span>${item.price}</span>{" "}
+                                {item.discount ? `$${item.discount}` : ""}
+                              </h6>
+                              <h4>
+                                <Link href={`/tour-details/${item.slug}`}>
+                                  {item.spot}
+                                </Link>
+                              </h4>
                               <ul>
                                 <li>
-                                  <i className="far fa-calendar"></i>
-                                  {item.day} Days / {item.night} Nights
+                                  <i className="far fa-map-marker-alt"></i>
+                                  {item.country}
                                 </li>
                               </ul>
-                              <div className="star">
-                                <Link href="/">
-                                  <i className="fas fa-star"></i>
-                                </Link>
-                                <Link href="/">
-                                  <i className="fas fa-star"></i>
-                                </Link>
-                                <Link href="/">
-                                  <i className="fas fa-star"></i>
-                                </Link>
-                                <Link href="/">
-                                  <i className="fas fa-star"></i>
-                                </Link>
-                                <Link href="/">
-                                  <i className="far fa-star"></i>
-                                </Link>
-                                <span>({item.review})</span>
+                              <div className="list">
+                                <ul>
+                                  <li>
+                                    <i className="far fa-calendar"></i>
+                                    {item.day} Days / {item.night} Nights
+                                  </li>
+                                </ul>
+                                <div className="star">
+                                  <Link href="/">
+                                    <i className="fas fa-star"></i>
+                                  </Link>
+                                  <Link href="/">
+                                    <i className="fas fa-star"></i>
+                                  </Link>
+                                  <Link href="/">
+                                    <i className="fas fa-star"></i>
+                                  </Link>
+                                  <Link href="/">
+                                    <i className="fas fa-star"></i>
+                                  </Link>
+                                  <Link href="/">
+                                    <i className="far fa-star"></i>
+                                  </Link>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-                  ))}
+                      </SwiperSlide>
+                    );
+                  })}
                 </Swiper>
               </div>
               <div className="swiper-dot4 mt-5">

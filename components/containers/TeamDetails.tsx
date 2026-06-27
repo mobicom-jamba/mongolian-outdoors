@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import thumb from "@/public/images/team/details.jpg";
+import type { Team } from "@/payload-types";
+import { mediaProps } from "@/lib/media";
 
-const TeamDetails = () => {
+const TeamDetails = ({ member }: { member: Team }) => {
+  const img = mediaProps(member.image, "card");
+
   return (
     <section className="team-details-section fix section-padding">
       <div className="container">
@@ -10,22 +13,23 @@ const TeamDetails = () => {
           <div className="row g-4 align-items-center">
             <div className="col-lg-5">
               <div className="team-details-image">
-                <Image src={thumb} alt="team-img" />
+                {img && (
+                  <Image
+                    src={img.src}
+                    alt={img.alt || member.name}
+                    width={img.width}
+                    height={img.height}
+                  />
+                )}
               </div>
             </div>
             <div className="col-lg-7">
               <div className="team-details-content">
                 <div className="details-info">
-                  <h3>Bat-Erdene Dulam</h3>
-                  <span>Tour Guide</span>
+                  <h3>{member.name}</h3>
+                  <span>{member.designation}</span>
                 </div>
-                <p className="mt-3">
-                  A travel professional with over 10 years of experience in
-                  Mongolia's steppe. Organizes tours across the Gobi and grassland
-                  regions, introducing foreign visitors to Mongolia's nature,
-                  culture, and traditions. Specializes in horseback riding and
-                  eagle hunting adventures.
-                </p>
+                {member.bio && <p className="mt-3">{member.bio}</p>}
                 <div className="progress-area mt-4">
                   <div className="progress-wrap">
                     <div className="pro-items">
@@ -56,17 +60,17 @@ const TeamDetails = () => {
                 </div>
                 <div className="social-icon">
                   <span>Social Media:</span>
-                  <Link href="/">
+                  <Link href={member.facebook || "#"}>
                     <i className="fab fa-facebook-f"></i>
                   </Link>
-                  <Link href="/">
+                  <Link href={member.twitter || "#"}>
                     <i className="fab fa-twitter"></i>
                   </Link>
-                  <Link href="/">
-                    <i className="fab fa-linkedin-in"></i>
+                  <Link href={member.instagram || "#"}>
+                    <i className="fab fa-instagram"></i>
                   </Link>
-                  <Link href="/">
-                    <i className="fab fa-pinterest-p"></i>
+                  <Link href={member.dribble || "#"}>
+                    <i className="fas fa-basketball-ball"></i>
                   </Link>
                 </div>
               </div>

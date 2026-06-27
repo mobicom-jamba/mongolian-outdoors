@@ -1,8 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import TeamData from "@/public/data/team-data";
+import { getPayloadClient } from "@/lib/payload";
+import { mediaProps } from "@/lib/media";
 
-const TeamSection = () => {
+const TeamSection = async () => {
+  const payload = await getPayloadClient();
+  const { docs: team } = await payload.find({
+    collection: "team",
+    limit: 8,
+    depth: 1,
+    sort: "createdAt",
+  });
+
   return (
     <section className="team-section-4 section-padding pt-0">
       <div className="container">
@@ -25,35 +34,36 @@ const TeamSection = () => {
           </p>
         </div>
         <div className="row">
-          {TeamData.map((item) => {
+          {team.map((item, index) => {
+            const img = mediaProps(item.image, "card");
             return (
               <div
                 className="col-xl-3 col-lg-4 col-md-6 "
                 data-aos-duration="800"
                 data-aos="fade-up"
-                data-aos-delay={item.delay}
+                data-aos-delay={`${((index % 4) + 1) * 200}`}
                 key={item.id}
               >
                 <div className="team-card-items-4 van-tilt">
                   <div className="thumb">
-                    <Image src={item.image} alt={item.name} />
+                    {img && <Image src={img.src} alt={img.alt || item.name} width={img.width} height={img.height} />}
                   </div>
                   <div className="content">
                     <span>{item.designation}</span>
                     <h3>
-                      <Link href={`${item.destination}`}>{item.name}</Link>
+                      <Link href={`/team-details/${item.slug}`}>{item.name}</Link>
                     </h3>
                     <div className="social-icon">
-                      <Link href={`${item.facebook}`}>
+                      <Link href={item.facebook || "#"}>
                         <i className="fab fa-facebook-f"></i>
                       </Link>
-                      <Link href={`${item.twitter}`}>
+                      <Link href={item.twitter || "#"}>
                         <i className="fab fa-twitter"></i>
                       </Link>
-                      <Link href={`${item.dribble}`}>
+                      <Link href={item.dribble || "#"}>
                         <i className="fas fa-basketball-ball"></i>
                       </Link>
-                      <Link href={`${item.instagram}`}>
+                      <Link href={item.instagram || "#"}>
                         <i className="fab fa-instagram"></i>
                       </Link>
                     </div>

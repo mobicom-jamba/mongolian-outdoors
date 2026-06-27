@@ -1,43 +1,18 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
-import TourTwoData from "@/public/data/tour-data-two";
+import type { Tour } from "@/payload-types";
+import { mediaProps } from "@/lib/media";
 import Pagination from "../blog/Pagination";
-import YoutubeEmbed from "@/components/layout/YoutubeEmbed";
 import location from "@/public/images/hero/location.png";
 import DatePick from "@/components/layout/banner/DatePick";
-import CountrySelect from "@/components/layout/select/CountrySelect";
 import ActivitySelect from "@/components/layout/select/ActivitySelect";
 import GuestSelect from "@/components/layout/select/GuestSelect";
 
-const TourList = () => {
-  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
-
-  const [minValue, setMinValue] = useState(130);
-  const [maxValue, setMaxValue] = useState(250);
-  const minLimit = 130;
-  const maxLimit = 500;
-
-  useEffect(() => {
-    if (minValue > maxValue) {
-      setMinValue(maxValue);
-    }
-  }, [minValue, maxValue]);
-
-  const getSliderBackground = () => {
-    const minPercent = ((minValue - minLimit) / (maxLimit - minLimit)) * 100;
-    const maxPercent = ((maxValue - minLimit) / (maxLimit - minLimit)) * 100;
-
-    return `linear-gradient(to right, #000 ${minPercent}%, #4D40CA ${minPercent}%, #4D40CA ${maxPercent}%, #000 ${maxPercent}%)`;
-  };
-
-  const [imageDimensions, setImageDimensions] = useState<
-    Record<number, { width: number; height: number }>
-  >({});
-
+const TourList = ({ tours }: { tours: Tour[] }) => {
   useEffect(() => {
     const lightbox = new PhotoSwipeLightbox({
       gallery: ".amz-wrap",
@@ -53,19 +28,6 @@ const TourList = () => {
     };
   }, []);
 
-  useEffect(() => {
-    TourTwoData.forEach((item) => {
-      const img = new window.Image();
-      img.src = item.image.src;
-      img.onload = () => {
-        setImageDimensions((prev) => ({
-          ...prev,
-          [item.id]: { width: img.width, height: img.height },
-        }));
-      };
-    });
-  }, []);
-
   return (
     <>
       <section className="amazing-tour-section section-padding">
@@ -76,19 +38,6 @@ const TourList = () => {
                 <div className="tour-sidebar-area sticky-style">
                   <div className="tour-destination-sidebar">
                     <div className="booking-list-area">
-                      <div className="booking-list">
-                        <div className="icon">
-                          <Image src={location} alt="img" />
-                        </div>
-                        <div className="content">
-                          <h5>Destination</h5>
-                          <div className="form-clt">
-                            <div className="form">
-                              <CountrySelect />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                       <div className="booking-list">
                         <div className="icon">
                           <Image src={location} alt="img" />
@@ -131,190 +80,6 @@ const TourList = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="tour-sidebar-widget">
-                        <div className="wid-title">
-                          <h3>Filter by Price</h3>
-                        </div>
-                        <div className="price-range-wrapper">
-                          <div className="slider-container">
-                            <input
-                              type="range"
-                              className="slider"
-                              min={minLimit}
-                              max={maxLimit}
-                              value={minValue}
-                              onChange={(e) =>
-                                setMinValue(parseInt(e.target.value))
-                              }
-                              style={{ background: getSliderBackground() }}
-                            />
-                            <input
-                              type="range"
-                              className="slider"
-                              min={minLimit}
-                              max={maxLimit}
-                              value={maxValue}
-                              onChange={(e) =>
-                                setMaxValue(parseInt(e.target.value))
-                              }
-                              style={{ background: getSliderBackground() }}
-                            />
-                          </div>
-                          <div className="price-text pt-4 d-flex gap-3">
-                            <label htmlFor="amount">Price:</label>
-                            <input
-                              type="text"
-                              id="amount"
-                              readOnly
-                              style={{ border: "0px" }}
-                              value={`$${minValue} - $${maxValue}`}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="tour-sidebar-widget">
-                        <div className="wid-title">
-                          <h3>Languages</h3>
-                        </div>
-                        <ul className="languages-list">
-                          <li>
-                            <label className="checkbox-single">
-                              <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                                <span className="checkbox-area d-center">
-                                  <input type="checkbox" />
-                                  <span className="checkmark d-center"></span>
-                                </span>
-                                <span className="text-color">English</span>
-                              </span>
-                            </label>
-                            <label className="checkbox-single">
-                              <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                                <span className="checkbox-area d-center">
-                                  <input type="checkbox" />
-                                  <span className="checkmark d-center"></span>
-                                </span>
-                                <span className="text-color">French</span>
-                              </span>
-                            </label>
-                            <label className="checkbox-single">
-                              <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                                <span className="checkbox-area d-center">
-                                  <input type="checkbox" />
-                                  <span className="checkmark d-center"></span>
-                                </span>
-                                <span className="text-color">Hindi</span>
-                              </span>
-                            </label>
-                          </li>
-                          <li>
-                            <label className="checkbox-single">
-                              <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                                <span className="checkbox-area d-center">
-                                  <input type="checkbox" />
-                                  <span className="checkmark d-center"></span>
-                                </span>
-                                <span className="text-color">German</span>
-                              </span>
-                            </label>
-                            <label className="checkbox-single">
-                              <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                                <span className="checkbox-area d-center">
-                                  <input type="checkbox" />
-                                  <span className="checkmark d-center"></span>
-                                </span>
-                                <span className="text-color">Thailand</span>
-                              </span>
-                            </label>
-                            <label className="checkbox-single">
-                              <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                                <span className="checkbox-area d-center">
-                                  <input type="checkbox" />
-                                  <span className="checkmark d-center"></span>
-                                </span>
-                                <span className="text-color">Urdu</span>
-                              </span>
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="tour-sidebar-widget">
-                        <div className="wid-title">
-                          <h3>Amenities</h3>
-                        </div>
-                        <div className="checkbox-items">
-                          <label className="checkbox-single">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">Car Parking</span>
-                            </span>
-                          </label>
-                          <label className="checkbox-single">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">
-                                Accepts Credit Cards
-                              </span>
-                            </span>
-                          </label>
-                          <label className="checkbox-single">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">Free Coupons</span>
-                            </span>
-                          </label>
-                          <label className="checkbox-single">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">
-                                Laundry Service
-                              </span>
-                            </span>
-                          </label>
-                          <label className="checkbox-single">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">
-                                Outdoor Seating
-                              </span>
-                            </span>
-                          </label>
-                          <label className="checkbox-single">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">Reservations</span>
-                            </span>
-                          </label>
-                          <label className="checkbox-single mb-0">
-                            <span className="d-flex gap-xl-3 gap-2 align-items-center">
-                              <span className="checkbox-area d-center">
-                                <input type="checkbox" />
-                                <span className="checkmark d-center"></span>
-                              </span>
-                              <span className="text-color">
-                                Wireless Internet
-                              </span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
                       <div className="search-widget">
                         <form action="#">
                           <button type="submit" className="theme-btn">
@@ -329,13 +94,14 @@ const TourList = () => {
               </div>
               <div className="col-xl-9 col-lg-8">
                 <div className="row g-4">
-                  {TourTwoData.slice(0, 9).map((item) => {
+                  {tours.map((item, index) => {
+                    const img = mediaProps(item.image, "card");
                     return (
                       <div
                         className="col-xl-4 col-lg-6 col-md-6 "
                         data-aos-duration="800"
                         data-aos="fade-up"
-                        data-aos-delay={item.delay}
+                        data-aos-delay={`${((index % 3) + 1) * 200}`}
                         key={item.id}
                       >
                         <div className="amazing-tour-items mt-0 van-tilt">
@@ -344,48 +110,45 @@ const TourList = () => {
                               <h4>${item.price}</h4>
                               <span>/ person</span>
                             </div>
-                            <Image src={item.image} alt={item.title} />
+                            {img && (
+                              <Image
+                                src={img.src}
+                                alt={img.alt || item.spot}
+                                width={img.width}
+                                height={img.height}
+                              />
+                            )}
                             <div className="list-items">
-                              <h6>{item.tag}</h6>
-                              <ul className="popup-icon">
-                                <li>
-                                  <button
-                                    className="video-buttton video-popup"
-                                    onClick={() => setActiveVideoId(item.video)}
-                                  >
-                                    <i className="far fa-video"></i>
-                                  </button>
-                                </li>
-                                <li>
-                                  <a
-                                    href={item.image.src}
-                                    className="img-popup"
-                                    data-pswp-width={
-                                      imageDimensions[item.id]?.width || 260
-                                    }
-                                    data-pswp-height={
-                                      imageDimensions[item.id]?.height || 260
-                                    }
-                                    data-pswp-src={item.image.src}
-                                  >
-                                    <i className="far fa-camera"></i>
-                                  </a>
-                                </li>
-                              </ul>
+                              <h6>{item.featured ? "Featured" : item.country}</h6>
+                              {img && (
+                                <ul className="popup-icon">
+                                  <li>
+                                    <a
+                                      href={img.src}
+                                      className="img-popup"
+                                      data-pswp-width={img.width}
+                                      data-pswp-height={img.height}
+                                      data-pswp-src={img.src}
+                                    >
+                                      <i className="far fa-camera"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              )}
                             </div>
                           </div>
                           <div className="content">
                             <h4>
-                              <Link href={`${item.destination}`}>
-                                {item.title}
+                              <Link href={`/tour-details/${item.slug}`}>
+                                {item.spot}
                               </Link>
                             </h4>
                             <span className="location-icon">
                               <i className="far fa-map-marker-alt"></i>
-                              {item.location}
+                              {item.country}
                             </span>
                             <Link
-                              href={`${item.destination}`}
+                              href={`/tour-details/${item.slug}`}
                               className="theme-btn"
                             >
                               <span>Book Now</span>{" "}
@@ -410,28 +173,6 @@ const TourList = () => {
           </div>
         </div>
       </section>
-      <div
-        className={(activeVideoId ? " video-zoom-in" : " ") + " video-backdrop"}
-        onClick={() => setActiveVideoId(null)}
-      >
-        <div className="video-inner">
-          <div
-            className="video-container"
-            onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) =>
-              e.stopPropagation()
-            }
-          >
-            {activeVideoId && <YoutubeEmbed embedId={activeVideoId} />}
-            <button
-              aria-label="close video popup"
-              className="close-video-popup"
-              onClick={() => setActiveVideoId(null)}
-            >
-              <i className="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

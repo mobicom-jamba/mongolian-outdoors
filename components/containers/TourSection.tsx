@@ -1,8 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import TourData from "@/public/data/tour-data";
+import { getPayloadClient } from "@/lib/payload";
+import { mediaProps } from "@/lib/media";
 
-const TourSection = () => {
+const TourSection = async () => {
+  const payload = await getPayloadClient();
+  const { docs: tours } = await payload.find({
+    collection: "tours",
+    limit: 4,
+    depth: 1,
+    sort: "-createdAt",
+  });
+
   return (
     <section className="tour-section fix section-padding">
       <div className="container">
@@ -25,32 +34,35 @@ const TourSection = () => {
           </p>
         </div>
         <div className="row">
-          {TourData.map((item) => {
+          {tours.map((item, index) => {
+            const img = mediaProps(item.image, "card");
             return (
               <div
                 className="col-xl-3 col-lg-6 col-md-6 "
                 data-aos-duration="800"
                 data-aos="fade-up"
-                data-aos-delay={item.delay}
+                data-aos-delay={`${(index + 1) * 200}`}
                 key={item.id}
               >
                 <div className="tour-box-items van-tilt">
                   <div className="thumb">
-                    <Image
-                      height={200}
-                      width={200}
-                      src={item.image}
-                      alt={item.spot}
-                    />
+                    {img && (
+                      <Image
+                        height={img.height}
+                        width={img.width}
+                        src={img.src}
+                        alt={img.alt || item.spot}
+                      />
+                    )}
                   </div>
                   <div className="content">
                     <span>{item.country}</span>
                     <h4>
-                      <Link href={`${item.destination}`}>{item.spot}</Link>
+                      <Link href={`/tour-details/${item.slug}`}>{item.spot}</Link>
                     </h4>
                     <h6>
                       From <span>${item.price}</span>{" "}
-                      <del>${item.discount}</del>
+                      {item.discount ? <del>${item.discount}</del> : null}
                     </h6>
                     <ul className="list">
                       <li>

@@ -14,7 +14,7 @@ const CommentForm = () => {
         <input type="text" placeholder="Type your website...." />
       </div>
       <button className="theme-btn center" type="submit">
-        <span>Дэлгэрэнгүй</span> <i className="far fa-long-arrow-right"></i>
+        <span>Post Comment</span> <i className="far fa-long-arrow-right"></i>
       </button>
     </form>
   );

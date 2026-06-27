@@ -1,0 +1,49 @@
+/* Mongolian Outdoors — Payload admin brand polish (orange accent). */
+
+:root {
+  --mo-brand: #ff6b1f;
+  --mo-brand-dark: #e85f15;
+}
+
+/* Primary actions: Save, Create new, Publish, login Submit */
+.btn--style-primary .btn__content,
+.btn--style-primary {
+  background-color: var(--mo-brand) !important;
+  border-color: var(--mo-brand) !important;
+  color: #fff !important;
+}
+.btn--style-primary:hover,
+.btn--style-primary:focus {
+  background-color: var(--mo-brand-dark) !important;
+  border-color: var(--mo-brand-dark) !important;
+}
+
+/* Active nav item + hovers */
+.nav__link:hover,
+.nav__link.active,
+.nav-group__toggle:hover {
+  color: var(--mo-brand) !important;
+}
+
+/* Links & interactive accents */
+.doc-tab--active::after,
+.step-nav a:hover {
+  color: var(--mo-brand) !important;
+}
+
+/* Field focus rings in the brand colour */
+.field-type input:focus,
+.field-type textarea:focus,
+.field-type .rs__control--is-focused {
+  border-color: var(--mo-brand) !important;
+  box-shadow: 0 0 0 1px var(--mo-brand) !important;
+}
+
+/* Login screen: a touch more polish */
+.login__brand {
+  margin-bottom: 1.75rem;
+}
+.login .form-submit .btn {
+  width: 100%;
+  justify-content: center;
+}

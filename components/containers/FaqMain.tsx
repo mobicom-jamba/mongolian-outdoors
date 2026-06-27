@@ -1,9 +1,13 @@
 "use client";
 import { useState } from "react";
 import AnimateHeight from "react-animate-height";
-import FaqData from "@/public/data/faq-data";
+import type { Faq } from "@/payload-types";
 
-const FaqMain = () => {
+const FaqMain = ({ faqs }: { faqs: Faq[] }) => {
+  const half = Math.ceil(faqs.length / 2);
+  const leftFaqs = faqs.slice(0, half);
+  const rightFaqs = faqs.slice(half);
+
   const [activeIndexLeft, setActiveIndexLeft] = useState<number | null>(0);
   const [activeIndexRight, setActiveIndexRight] = useState<number | null>(null);
 
@@ -35,7 +39,7 @@ const FaqMain = () => {
             <div className="faq-items">
               <div className="faq-accordion">
                 <div className="accordion" id="accordion">
-                  {FaqData.slice(0, 8).map((item, index) => {
+                  {leftFaqs.map((item, index) => {
                     const isActive = activeIndexLeft === index;
                     return (
                       <div
@@ -80,7 +84,7 @@ const FaqMain = () => {
             <div className="faq-items">
               <div className="faq-accordion">
                 <div className="accordion" id="accordion2">
-                  {FaqData.slice(8).map((item, index) => {
+                  {rightFaqs.map((item, index) => {
                     const isActive = activeIndexRight === index;
                     return (
                       <div

@@ -124,7 +124,7 @@ const AboutTwo = () => {
                       <Image src={call} alt="img" />
                     </div>
                     <div className="content">
-                      <span>Холбогдох</span>
+                      <span>Contact</span>
                       <h6>
                         <Link href="tel:+8809533309">+976 8081-3636</Link>
                       </h6>
