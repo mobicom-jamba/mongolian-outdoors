@@ -10,6 +10,18 @@ export type ImgProps = {
 };
 
 /**
+ * Payload serves uploads through its API route (`/api/media/file/<filename>`),
+ * which is a serverless function that reads from the local `staticDir`. On
+ * Vercel that route 500s because the function filesystem doesn't contain the
+ * `public/uploads` assets — but those files ARE deployed and served statically
+ * by the CDN at `/uploads/<filename>`. Rewrite to the static path so images
+ * load in production (and locally). Absolute/cloud URLs are left untouched.
+ */
+function toStaticUrl(url: string): string {
+  return url.replace(/^\/api\/media\/file\//, "/uploads/");
+}
+
+/**
  * Normalize a Payload upload field into props for next/image.
  *
  * Accepts the union Payload returns for an upload relation: a populated `Media`
@@ -35,7 +47,7 @@ export function mediaProps(
   const height = sized?.height ?? media.height ?? fallback.height;
 
   return {
-    src,
+    src: toStaticUrl(src),
     width: width ?? fallback.width,
     height: height ?? fallback.height,
     alt: media.alt ?? "",
