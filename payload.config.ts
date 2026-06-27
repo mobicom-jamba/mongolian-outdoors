@@ -55,8 +55,16 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URI || "",
       // Supabase session pooler caps total clients at 15. Keep this low so that
-      // parallel build workers + runtime stay under the limit.
+      // parallel build workers + runtime stay under the limit, and release idle
+      // connections quickly so dev HMR doesn't accumulate them.
       max: 3,
+      // Release idle connections fast so dev HMR / build workers don't hold
+      // pooler slots, and free them on idle entirely.
+      idleTimeoutMillis: 10000,
+      allowExitOnIdle: true,
+      // Fail fast instead of queueing forever when the pooler is saturated —
+      // this prevents the retry storm that spirals into EMAXCONNSESSION.
+      connectionTimeoutMillis: 10000,
     },
   }),
   sharp,
