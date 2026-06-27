@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "db:clean": "node --env-file-if-exists=.env scripts/clean-db-sessions.mjs",
+    "predev": "node --env-file-if-exists=.env scripts/clean-db-sessions.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
